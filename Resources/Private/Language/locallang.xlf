@@ -4,7 +4,7 @@
 		<header/>
 		<body>
 			<trans-unit id="tx_ns_disqus_comments_domain_model_comment">
-				<source>Nitsan Comment</source>
+				<source>[NITSAN] Disqus Comment</source>
 			</trans-unit>
 			<trans-unit id="tx_ns_disqus_comments_domain_model_comment.description">
 				<source></source>

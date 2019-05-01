@@ -5,7 +5,7 @@ use TYPO3\CMS\Core\Page\PageRenderer;
 
 /***
  *
- * This file is part of the "Nitsan Disqus Comments" Extension for TYPO3 CMS.
+ * This file is part of the "[NITSAN] Disqus Comment" Extension for TYPO3 CMS.
  *
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.

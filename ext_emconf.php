@@ -11,8 +11,8 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => '[NITSAN] Disqus Comments',
-    'description' => 'Nitsan Disqus Comment is very easy Typo3 extension for add comment for blog, news, etc.',
+    'title' => '[NITSAN] Disqus Comment System',
+    'description' => 'Easily configure Disqus.com to your TYPO3 pages, news, blogs etc., Disqus is world one of the most popular comment system.',
     'category' => 'plugin',
     'author' => 'NITSAN Technologies',
     'author_email' => 'sanjay@nitsan.in',
