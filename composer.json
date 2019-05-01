@@ -1,0 +1,34 @@
+{
+    "name": "nitsan/ns-disqus-comments",
+    "type": "typo3-cms-extension",
+    "description": "Nitsan Disqus Comment is very easy Typo3 extension for add comment for blog, news, etc.",
+    "homepage": "https://extensions.typo3.org/extension/ns_disqus_comments/",
+    "license": "GPL-2.0+",
+    "keywords": [
+        "TYPO3 CMS",
+        "Discuss",
+        "Nitsan",
+        "Comments"
+    ],
+    "support": {
+        "issues": "https://github.com/nitsan-technologies/ns_disqus_comments/issues"
+    },
+    "authors": [],
+    "require": {
+        "typo3/cms-core": ">=6.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ns\\NsDisqusComments\\": "Classes/"
+        }
+    },
+    "replace": {
+        "ns_disqus_comments": "self.version",
+        "nitsan/ns-disqus-comments": "self.version"
+    },
+    "extra": {
+      "typo3/cms": {
+          "extension-key": "ns_disqus_comments"
+    }
+  }
+}
