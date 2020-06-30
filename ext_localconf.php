@@ -2,15 +2,15 @@
 defined('TYPO3_MODE') || die('Access denied.');
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-	'Ns.NsDisqusComments',
-	'Comment',
-	[
-		'NsDisqusComments' => 'disqusComments',
-	],
-	// non-cacheable actions
-	[
-		'NsDisqusComments' => 'disqusComments',
-	]
+    'Ns.NsDisqusComments',
+    'Comment',
+    [
+        'NsDisqusComments' => 'disqusComments',
+    ],
+    // non-cacheable actions
+    [
+        'NsDisqusComments' => 'disqusComments',
+    ]
 );
 
 if (version_compare(TYPO3_branch, '7.0', '>')) {

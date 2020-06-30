@@ -17,23 +17,24 @@ use TYPO3\CMS\Core\Page\PageRenderer;
 /**
  * NsDisqusCommentsController
  */
-class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
+class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+{
 
-
-	/**
-	 * action new
-	 *
-	 * @return void
-	 */
-	public function disqusCommentsAction() {		
-		$disqus_shortname = $this->settings['ShortName'];
-		if(empty($disqus_shortname)) {
-			$this->addFlashMessage("Please insert your DISQUS shortname in the Extension config.", "", \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR); 
-		}else {
-			$pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(PageRenderer::class);
+    /**
+     * action new
+     *
+     * @return void
+     */
+    public function disqusCommentsAction()
+    {
+        $disqus_shortname = $this->settings['ShortName'];
+        if (empty($disqus_shortname)) {
+            $this->addFlashMessage('Please insert your DISQUS shortname in the Extension config.', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
+        } else {
+            $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(PageRenderer::class);
             $pageRenderer->addFooterData('
 				<script type="text/javascript">
-					var disqus_shortname = "'.$disqus_shortname.'";
+					var disqus_shortname = "' . $disqus_shortname . '";
 					
 					(function() {
 						var dsq = document.createElement("script"); dsq.type = "text/javascript"; dsq.async = true;
@@ -42,6 +43,6 @@ class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\Actio
 					})();
 				</script>
 			');
-		}
-	}	
+        }
+    }
 }

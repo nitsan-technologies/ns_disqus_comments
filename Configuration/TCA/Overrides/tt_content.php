@@ -5,9 +5,9 @@ defined('TYPO3_MODE') or die();
  * Plugin
  */
  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
- 	'Ns.NsDisqusComments',
-    'Comment',
-    '[NITSAN] Disqus Comment'
+     'Ns.NsDisqusComments',
+     'Comment',
+     '[NITSAN] Disqus Comment'
  );
 
  /* Flexform setting  */
