@@ -1,15 +1,20 @@
 <?php
 defined('TYPO3_MODE') || die('Access denied.');
 
+if (version_compare(TYPO3_branch, '10.0', '>=')) {
+    $moduleClass = \Ns\NsDisqusComments\Controller\NsDisqusCommentsController::class;
+} else {
+    $moduleClass = 'NsDisqusComments';
+}
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'Ns.NsDisqusComments',
     'Comment',
     [
-        'NsDisqusComments' => 'disqusComments',
+        $moduleClass => 'disqusComments',
     ],
     // non-cacheable actions
     [
-        'NsDisqusComments' => 'disqusComments',
+        $moduleClass => 'disqusComments',
     ]
 );
 
