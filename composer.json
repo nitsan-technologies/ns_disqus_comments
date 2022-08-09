@@ -1,7 +1,7 @@
 {
     "name": "nitsan/ns-disqus-comments",
     "type": "typo3-cms-extension",
-    "description": "Easily configure Disqus.com plugin to your TYPO3 pages, news, blogs etc., Disqus is world one of the most popular comment system. Live-Demo: https://demo.t3terminal.com/t3t-extensions/disqus-comment/ You can download PRO version for more-features & free-support at ttps://t3terminal.com/typo3-disqus-comment-plugin-free/",
+    "description": "Easily configure Disqus.com plugin to your TYPO3 pages, news, blogs etc., Disqus is world one of the most popular comment system. Live-Demo: https://demo.t3planet.com/t3t-extensions/disqus-comment/ You can download PRO version for more-features & free-support at https://t3planet.com/typo3-disqus-comment-extension",
     "homepage": "https://extensions.typo3.org/extension/ns_disqus_comments/",
     "license": "GPL-2.0+",
     "keywords": [
