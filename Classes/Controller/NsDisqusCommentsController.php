@@ -2,6 +2,7 @@
 namespace Ns\NsDisqusComments\Controller;
 
 use TYPO3\CMS\Core\Page\PageRenderer;
+use Psr\Http\Message\ResponseInterface;
 
 /***
  *
@@ -23,13 +24,13 @@ class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\Actio
     /**
      * action new
      *
-     * @return void
+     * @return \Psr\Http\Message\ResponseInterface
      */
-    public function disqusCommentsAction()
+    public function disqusCommentsAction(): ResponseInterface
     {
         $disqus_shortname = $this->settings['ShortName'];
         if (empty($disqus_shortname)) {
-            $this->addFlashMessage('Please insert your DISQUS shortname in the Extension config.', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
+            $this->addFlashMessage('Please insert your DISQUS shortname in the Extension config.', '', \TYPO3\CMS\Core\Type\ContextualFeedbackSeverity::ERROR);
         } else {
             $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(PageRenderer::class);
             $pageRenderer->addFooterData('
@@ -44,5 +45,6 @@ class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\Actio
 				</script>
 			');
         }
+        return $this->htmlResponse();
     }
 }
