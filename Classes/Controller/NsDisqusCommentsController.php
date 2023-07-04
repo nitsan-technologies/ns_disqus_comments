@@ -1,4 +1,5 @@
 <?php
+
 namespace Ns\NsDisqusComments\Controller;
 
 use TYPO3\CMS\Core\Page\PageRenderer;
@@ -11,7 +12,7 @@ use Psr\Http\Message\ResponseInterface;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- *  (c) 2018
+ *  (c) 2023
  *
  ***/
 
@@ -20,11 +21,10 @@ use Psr\Http\Message\ResponseInterface;
  */
 class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
     /**
      * action new
      *
-     * @return \Psr\Http\Message\ResponseInterface
+     * @return ResponseInterface
      */
     public function disqusCommentsAction(): ResponseInterface
     {
