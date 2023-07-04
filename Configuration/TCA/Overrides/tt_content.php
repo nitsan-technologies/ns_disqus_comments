@@ -1,15 +1,15 @@
 <?php
-defined('TYPO3_MODE') or die();
+
+defined('TYPO3') or die();
 
 /***************
  * Plugin
  */
- \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-     'Ns.NsDisqusComments',
-     'Comment',
-     '[NITSAN] Disqus Comment'
- );
+$pluginSignature = \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+    'NsDisqusComments',
+    'Comment',
+    '[NITSAN] Disqus Comment'
+);
 
- /* Flexform setting  */
-$pluginSignature = 'nsdisquscomments_comment';
+/* Flexform setting  */
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'recursive,select_key,pages';

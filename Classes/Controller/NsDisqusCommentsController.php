@@ -1,7 +1,9 @@
 <?php
+
 namespace Ns\NsDisqusComments\Controller;
 
 use TYPO3\CMS\Core\Page\PageRenderer;
+use Psr\Http\Message\ResponseInterface;
 
 /***
  *
@@ -10,7 +12,7 @@ use TYPO3\CMS\Core\Page\PageRenderer;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- *  (c) 2018
+ *  (c) 2023
  *
  ***/
 
@@ -19,17 +21,16 @@ use TYPO3\CMS\Core\Page\PageRenderer;
  */
 class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
     /**
      * action new
      *
-     * @return void
+     * @return ResponseInterface
      */
-    public function disqusCommentsAction()
+    public function disqusCommentsAction(): ResponseInterface
     {
         $disqus_shortname = $this->settings['ShortName'];
         if (empty($disqus_shortname)) {
-            $this->addFlashMessage('Please insert your DISQUS shortname in the Extension config.', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
+            $this->addFlashMessage('Please insert your DISQUS shortname in the Extension config.', '', \TYPO3\CMS\Core\Type\ContextualFeedbackSeverity::ERROR);
         } else {
             $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(PageRenderer::class);
             $pageRenderer->addFooterData('
@@ -44,5 +45,6 @@ class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\Actio
 				</script>
 			');
         }
+        return $this->htmlResponse();
     }
 }
