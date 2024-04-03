@@ -1,12 +1,14 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => '[NITSAN] Disqus.com Plugin',
-    'description' => 'Easily configure Disqus.com plugin to your TYPO3 pages, news, blogs etc., Disqus is world one of the most popular comment system. LIVE Demo: https://demo.t3terminal.com/t3t-extensions/disqus-comment/ PRO version: https://t3planet.com/typo3-disqus-comment-extension',
+    'title' => 'Disqus',
+    'description' => 'Using the TYPO3 Disqus Comment Extension you can connect DISQUS comments plugin into your website. This extension adds a DISQUS comments section to TYPO3 pages, allowing users to comment using their favorite social networks. Users can receive notifications about new replies, share messages, and engage with your content. 
+    
+    *** Live-Demo: https://demo.t3planet.com/t3-extensions/disqus-comments *** Documentation & Free Support: https://t3planet.com/typo3-disqus-comment-extension',
     'category' => 'plugin',
-    'author' => 'Team NITSAN',
+    'author' => 'T3: Nilesh Malankiya, T3: Himanshu Ramavat, QA: Krishna Dhapa',
     'author_email' => 'sanjay@nitsan.in',
-    'author_company' => 'NITSAN Technologies Pvt Ltd',
+    'author_company' => 'T3Planet // NITSAN',
     'state' => 'stable',
     'internal' => '',
     'uploadfolder' => '0',
