@@ -4,7 +4,7 @@
 		<header/>
 		<body>
 			<trans-unit id="tx_ns_disqus_comments_domain_model_comment">
-				<source>[NITSAN] Disqus Comment</source>
+				<source>Disqus Comment</source>
 			</trans-unit>
 			<trans-unit id="tx_ns_disqus_comments_domain_model_comment.description">
 				<source>Easily configure Disqus.com to your TYPO3 pages, news, blogs etc., Disqus is world's one of the most popular comment system.</source>

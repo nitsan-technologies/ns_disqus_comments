@@ -1,11 +1,12 @@
 <?php
+
 namespace Ns\NsDisqusComments\Controller;
 
 use TYPO3\CMS\Core\Page\PageRenderer;
 
 /***
  *
- * This file is part of the "[NITSAN] Disqus Comment" Extension for TYPO3 CMS.
+ * This file is part of the "Disqus Comment" Extension for TYPO3 CMS.
  *
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
@@ -19,7 +20,6 @@ use TYPO3\CMS\Core\Page\PageRenderer;
  */
 class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
     /**
      * action new
      *
