@@ -2,13 +2,15 @@
 
 defined('TYPO3') or die();
 
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
 /***************
  * Plugin
  */
-$pluginSignature = \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+$pluginSignature = ExtensionUtility::registerPlugin(
     'NsDisqusComments',
     'Comment',
-    '[NITSAN] Disqus Comment'
+    'Disqus Comment'
 );
 
 /* Flexform setting  */
