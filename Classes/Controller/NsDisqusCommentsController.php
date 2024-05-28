@@ -4,10 +4,13 @@ namespace Ns\NsDisqusComments\Controller;
 
 use TYPO3\CMS\Core\Page\PageRenderer;
 use Psr\Http\Message\ResponseInterface;
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /***
  *
- * This file is part of the "[NITSAN] Disqus Comment" Extension for TYPO3 CMS.
+ * This file is part of the "Disqus Comment" Extension for TYPO3 CMS.
  *
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
@@ -19,7 +22,7 @@ use Psr\Http\Message\ResponseInterface;
 /**
  * NsDisqusCommentsController
  */
-class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+class NsDisqusCommentsController extends ActionController
 {
     /**
      * action new
@@ -30,9 +33,9 @@ class NsDisqusCommentsController extends \TYPO3\CMS\Extbase\Mvc\Controller\Actio
     {
         $disqus_shortname = $this->settings['ShortName'];
         if (empty($disqus_shortname)) {
-            $this->addFlashMessage('Please insert your DISQUS shortname in the Extension config.', '', \TYPO3\CMS\Core\Type\ContextualFeedbackSeverity::ERROR);
+            $this->addFlashMessage('Please insert your DISQUS shortname in the Extension config.', '', ContextualFeedbackSeverity::ERROR);
         } else {
-            $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(PageRenderer::class);
+            $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
             $pageRenderer->addFooterData('
 				<script type="text/javascript">
 					var disqus_shortname = "' . $disqus_shortname . '";
