@@ -1,6 +1,6 @@
 mod.wizards.newContentElement.wizardItems.plugins {
 	elements {
-		ns_disqus_comments {
+	nsdisquscomments_comment {
 			icon = ../typo3conf/ext/ns_disqus_comments/Resources/Public/Icons/user_plugin_comment.svg
 			iconIdentifier = ext-ns-discuss-icon
 			title = LLL:EXT:ns_disqus_comments/Resources/Private/Language/locallang_db.xlf:tx_ns_disqus_comments_domain_model_comment

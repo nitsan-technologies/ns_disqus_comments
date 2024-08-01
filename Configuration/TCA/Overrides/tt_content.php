@@ -10,8 +10,12 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 $pluginSignature = ExtensionUtility::registerPlugin(
     'NsDisqusComments',
     'Comment',
-    'Disqus Comment'
+    'Disqus Comment',
+    '',
+    'plugins'
+   
 );
 
 /* Flexform setting  */
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'recursive,select_key,pages';
+/* Add the Flexform configuration */
