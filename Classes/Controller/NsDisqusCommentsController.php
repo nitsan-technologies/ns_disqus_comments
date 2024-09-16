@@ -31,7 +31,7 @@ class NsDisqusCommentsController extends ActionController
      */
     public function disqusCommentsAction(): ResponseInterface
     {
-        $disqus_shortname = $this->settings['ShortName'];
+        $disqus_shortname = $this->settings['ShortName'] ?? '';
         if (empty($disqus_shortname)) {
             $this->addFlashMessage('Please insert your DISQUS shortname in the Extension config.', '', ContextualFeedbackSeverity::ERROR);
         } else {

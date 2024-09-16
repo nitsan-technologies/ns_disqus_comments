@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = [
+$EM_CONF['ns_disqus_comments'] = [
     'title' => 'Disqus',
     'description' => 'Using the TYPO3 Disqus Comment Extension you can connect DISQUS comments plugin into your website. This extension adds a DISQUS comments section to TYPO3 pages, allowing users to comment using their favorite social networks. Users can receive notifications about new replies, share messages, and engage with your content. 
     
@@ -13,7 +13,7 @@ $EM_CONF[$_EXTKEY] = [
     'internal' => '',
     'uploadfolder' => '0',
     'createDirs' => '',
-    'version' => '12.1.0',
+    'version' => '13.0.0',
     'constraints' => [
         'depends' => [
             'typo3' => '12.0.0-13.99.99',

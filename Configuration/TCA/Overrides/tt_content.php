@@ -11,7 +11,7 @@ $pluginSignature = ExtensionUtility::registerPlugin(
     'NsDisqusComments',
     'Comment',
     'Disqus Comment',
-    '',
+    'ext-ns-discuss-icon',
     'plugins'
    
 );
