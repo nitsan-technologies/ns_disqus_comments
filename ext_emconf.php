@@ -1,14 +1,13 @@
 <?php
 
 $EM_CONF['ns_disqus_comments'] = [
-    'title' => 'Disqus',
-    'description' => 'Using the TYPO3 Disqus Comment Extension you can connect DISQUS comments plugin into your website. This extension adds a DISQUS comments section to TYPO3 pages, allowing users to comment using their favorite social networks. Users can receive notifications about new replies, share messages, and engage with your content. 
+    'title' => 'TYPO3 Disqus Integration',
+    'description' => 'Integrate the Disqus comment system seamlessly into your TYPO3 website. Allow users to post comments using their social accounts and stay engaged through notifications and replies.',
     
-    *** Live-Demo: https://demo.t3planet.com/t3-extensions/disqus-comments *** Documentation & Free Support: https://t3planet.com/typo3-disqus-comment-extension',
     'category' => 'plugin',
-    'author' => 'T3: Nilesh Malankiya, T3: Himanshu Ramavat, QA: Krishna Dhapa',
-    'author_email' => 'sanjay@nitsan.in',
-    'author_company' => 'T3Planet // NITSAN',
+    'author' => 'Team T3Planet',
+    'author_email' => 'info@t3planet.de',
+    'author_company' => 'T3Planet',
     'state' => 'stable',
     'internal' => '',
     'uploadfolder' => '0',
