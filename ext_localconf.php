@@ -4,26 +4,33 @@ defined('TYPO3') || die('Access denied.');
 
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 use Ns\NsDisqusComments\Controller\NsDisqusCommentsController;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Imaging\IconRegistry;
-use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
+use TYPO3\CMS\Core\Utility\VersionNumberUtility;
 
-ExtensionUtility::configurePlugin(
-    'NsDisqusComments',
-    'Comment',
-    [
-        NsDisqusCommentsController::class => 'disqusComments',
-    ],
-    // non-cacheable actions
-    [
-        NsDisqusCommentsController::class => 'disqusComments',
-    ]
-);
+$versionNumber =  VersionNumberUtility::convertVersionStringToArray(VersionNumberUtility::getCurrentTypo3Version());
 
-$iconRegistry = GeneralUtility::makeInstance(IconRegistry::class);
-
-$iconRegistry->registerIcon(
-    'ext-ns-discuss-icon',
-    SvgIconProvider::class,
-    ['source' => 'EXT:ns_disqus_comments/Resources/Public/Icons/ns_disqus_comments.svg']
-);
+if ($versionNumber['version_main'] <= '12') {
+    ExtensionUtility::configurePlugin(
+        'NsDisqusComments',
+        'Comment',
+        [
+            NsDisqusCommentsController::class => 'disqusComments',
+        ],
+        // non-cacheable actions
+        [
+            NsDisqusCommentsController::class => 'disqusComments',
+        ]
+    );
+}else{
+    ExtensionUtility::configurePlugin(
+        'NsDisqusComments',
+        'Comment',
+        [
+            NsDisqusCommentsController::class => 'disqusComments',
+        ],
+        // non-cacheable actions
+        [
+            NsDisqusCommentsController::class => 'disqusComments',
+        ],
+        ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
+    );
+}
