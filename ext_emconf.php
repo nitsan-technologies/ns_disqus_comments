@@ -15,7 +15,7 @@ $EM_CONF['ns_disqus_comments'] = [
     'version' => '13.0.1',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.4.40-14.9.99',
+            'typo3' => '12.4.37-14.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],

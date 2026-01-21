@@ -5,8 +5,7 @@ mod.wizards.newContentElement.wizardItems.plugins {
 			title = LLL:EXT:ns_disqus_comments/Resources/Private/Language/locallang_db.xlf:tx_ns_disqus_comments_domain_model_comment
 			description = LLL:EXT:ns_disqus_comments/Resources/Private/Language/locallang_db.xlf:tx_ns_disqus_comments_domain_model_comment.description
 			tt_content_defValues {
-				CType = list
-				list_type = nsdisquscomments_comment
+				CType = nsdisquscomments_comment
 			}
 		}
 	}

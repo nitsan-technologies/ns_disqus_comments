@@ -13,5 +13,6 @@ use Ns\NsDisqusComments\Controller\NsDisqusCommentsController;
         // non-cacheable actions
         [
             NsDisqusCommentsController::class => 'disqusComments',
-        ]
+        ],
+        ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
     );
