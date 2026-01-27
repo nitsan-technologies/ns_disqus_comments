@@ -1,0 +1,5 @@
+@import 'EXT:ns_disqus_comments/Configuration/TypoScript/setup.typoscript'
+
+plugin.tx_nsdisquscomments_comment.settings {
+    ShortName = {$ns_disqus_comments.shortName}
+}
