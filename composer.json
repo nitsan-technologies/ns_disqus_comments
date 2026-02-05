@@ -1,7 +1,7 @@
 {
     "name": "nitsan/ns-disqus-comments",
     "type": "typo3-cms-extension",
-    "description": "Using the TYPO3 Disqus Comment Extension you can connect DISQUS comments plugin into your website. This extension adds a DISQUS comments section to TYPO3 pages, allowing users to comment using their favorite social networks. Users can receive notifications about new replies, share messages, and engage with your content.",
+    "description": "TYPO3 Disqus Integration - Using the TYPO3 Disqus Comment Extension you can connect DISQUS comments plugin into your website. This extension adds a DISQUS comments section to TYPO3 pages, allowing users to comment using their favorite social networks. Users can receive notifications about new replies, share messages, and engage with your content.",
     "homepage": "https://demo.t3planet.com/t3-extensions/disqus-comments",
     "license": "GPL-2.0+",
     "keywords": [
@@ -15,7 +15,7 @@
     },
     "authors": [],
     "require": {
-        "typo3/cms-core": "^12 || ^13" 
+        "typo3/cms-core": "^12.4.37 || ^13 || ^14" 
     },
     "autoload": {
         "psr-4": {

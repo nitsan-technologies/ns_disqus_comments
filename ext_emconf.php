@@ -12,10 +12,10 @@ $EM_CONF['ns_disqus_comments'] = [
     'internal' => '',
     'uploadfolder' => '0',
     'createDirs' => '',
-    'version' => '13.0.1',
+    'version' => '14.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.0.0-13.99.99',
+            'typo3' => '12.4.37-14.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],

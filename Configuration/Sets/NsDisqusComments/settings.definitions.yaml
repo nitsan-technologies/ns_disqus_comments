@@ -1,0 +1,32 @@
+categories:
+  ns_disqus_comments:
+    label: 'Disqus Comments Settings'
+  ns_disqus_comments.view:
+    label: 'View Settings'
+    parent: ns_disqus_comments
+  ns_disqus_comments.shortName:
+    label: 'ShortName Settings'
+    parent: ns_disqus_comments
+
+settings:
+  ns_disqus_comments.templateRootPath:
+    label: 'Path to template root (FE)'
+    category: ns_disqus_comments.view
+    type: string
+    default: EXT:ns_disqus_comments/Resources/Private/Templates/
+  ns_disqus_comments.partialRootPaths:
+    label: 'Path to template partials (FE)'
+    category: ns_disqus_comments.view
+    type: string
+    default: EXT:ns_disqus_comments/Resources/Private/Partials/
+  ns_disqus_comments.layoutRootPaths:
+    label: 'Path to template layout (FE)'
+    category: ns_disqus_comments.view
+    type: string
+    default: EXT:ns_disqus_comments/Resources/Private/Layouts/
+
+  ns_disqus_comments.shortName:
+    label: 'Disqus comments short Name'
+    category: ns_disqus_comments
+    type: string
+    default: ''
